@@ -2,4 +2,4 @@
 
 
 ### To Do:
-completed tests, examples, documentation, and more
+completed tests, examples, documentation, add methods for pool, node, KVM
