@@ -1,0 +1,22 @@
+{
+  "name":"proxmox",
+  "preferGobal": "false,
+  "version": 0.1.0.
+  "author": "T. Tarvis",
+  "description": "node.js, asynchronous, proxmox client",
+  "repository": {
+	"type":"git",
+	"url":"https://github.com/ttarvis/node-proxmox",
+   },
+  "engines": {
+	"node": ">=0.10.9"
+  },
+  "licenses": [
+	{
+	"type":"Artistic 2.0"
+	}
+  ],
+  "main":"./lib/proxmox.js"
+}
+  
+  
