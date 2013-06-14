@@ -15,9 +15,9 @@ or install from here.
 
 ###### Example:
 
-    proxmox = require("proxmox")('user', 'password', 'domain.com');```
+    proxmox = require("proxmox")('user', 'password', 'domain.com');
   
-   proxmox.getClusterStatus(function(err, response){
+    proxmox.getClusterStatus(function(err, response){
 	if(err) throw err;
 	else{
 	  data = JSON.parse(response);
