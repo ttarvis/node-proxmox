@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish', '.' ]
+2 info using npm@1.2.24
+3 info using node@v0.10.9
+4 verbose publish [ '.' ]
+5 verbose read json /home/node-proxmox/package.json
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /root/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz
+14 verbose folder .
+15 info prepublish proxmox@0.1.0
+16 silly lockFile 3a52ce78- .
+17 verbose lock . /root/.npm/3a52ce78-.lock
+18 silly lockFile 70667dc0-30169-0-3043295487295836-tmp-tgz /root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz
+19 verbose lock /root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz /root/.npm/70667dc0-30169-0-3043295487295836-tmp-tgz.lock
+20 silly lockFile 3a52ce78- .
+21 silly lockFile 3a52ce78- .
+22 silly lockFile 70667dc0-30169-0-3043295487295836-tmp-tgz /root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz
+23 silly lockFile 70667dc0-30169-0-3043295487295836-tmp-tgz /root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz
+24 verbose tar unpack /root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz
+25 silly lockFile b3d511a4-30169-0-3043295487295836-package /root/tmp/npm-355926/1371184730169-0.3043295487295836/package
+26 verbose lock /root/tmp/npm-355926/1371184730169-0.3043295487295836/package /root/.npm/b3d511a4-30169-0-3043295487295836-package.lock
+27 silly lockFile 70667dc0-30169-0-3043295487295836-tmp-tgz /root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz
+28 verbose lock /root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz /root/.npm/70667dc0-30169-0-3043295487295836-tmp-tgz.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 silly gunzTarPerm extractEntry package.json
+31 silly gunzTarPerm extractEntry README.md
+32 silly gunzTarPerm extractEntry lib/proxmox.js
+33 silly gunzTarPerm extractEntry license
+34 silly gunzTarPerm extractEntry test/test.js
+35 verbose read json /root/tmp/npm-355926/1371184730169-0.3043295487295836/package/package.json
+36 silly lockFile b3d511a4-30169-0-3043295487295836-package /root/tmp/npm-355926/1371184730169-0.3043295487295836/package
+37 silly lockFile b3d511a4-30169-0-3043295487295836-package /root/tmp/npm-355926/1371184730169-0.3043295487295836/package
+38 silly lockFile 70667dc0-30169-0-3043295487295836-tmp-tgz /root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz
+39 silly lockFile 70667dc0-30169-0-3043295487295836-tmp-tgz /root/tmp/npm-355926/1371184730169-0.3043295487295836/tmp.tgz
+40 verbose from cache /root/tmp/npm-355926/1371184730169-0.3043295487295836/package/package.json
+41 verbose tar pack [ '/root/.npm/proxmox/0.1.0/package.tgz',
+41 verbose tar pack   '/root/tmp/npm-355926/1371184730169-0.3043295487295836/package' ]
+42 verbose tarball /root/.npm/proxmox/0.1.0/package.tgz
+43 verbose folder /root/tmp/npm-355926/1371184730169-0.3043295487295836/package
+44 silly lockFile b3d511a4-30169-0-3043295487295836-package /root/tmp/npm-355926/1371184730169-0.3043295487295836/package
+45 verbose lock /root/tmp/npm-355926/1371184730169-0.3043295487295836/package /root/.npm/b3d511a4-30169-0-3043295487295836-package.lock
+46 silly lockFile 8fbb3a41-ot-npm-proxmox-0-1-0-package-tgz /root/.npm/proxmox/0.1.0/package.tgz
+47 verbose lock /root/.npm/proxmox/0.1.0/package.tgz /root/.npm/8fbb3a41-ot-npm-proxmox-0-1-0-package-tgz.lock
+48 silly lockFile b3d511a4-30169-0-3043295487295836-package /root/tmp/npm-355926/1371184730169-0.3043295487295836/package
+49 silly lockFile b3d511a4-30169-0-3043295487295836-package /root/tmp/npm-355926/1371184730169-0.3043295487295836/package
+50 silly lockFile 8fbb3a41-ot-npm-proxmox-0-1-0-package-tgz /root/.npm/proxmox/0.1.0/package.tgz
+51 silly lockFile 8fbb3a41-ot-npm-proxmox-0-1-0-package-tgz /root/.npm/proxmox/0.1.0/package.tgz
+52 silly lockFile bfb9ea4e-root-npm-proxmox-0-1-0-package /root/.npm/proxmox/0.1.0/package
+53 verbose lock /root/.npm/proxmox/0.1.0/package /root/.npm/bfb9ea4e-root-npm-proxmox-0-1-0-package.lock
+54 silly lockFile bfb9ea4e-root-npm-proxmox-0-1-0-package /root/.npm/proxmox/0.1.0/package
+55 silly lockFile bfb9ea4e-root-npm-proxmox-0-1-0-package /root/.npm/proxmox/0.1.0/package
+56 verbose tar unpack /root/.npm/proxmox/0.1.0/package.tgz
+57 silly lockFile bfb9ea4e-root-npm-proxmox-0-1-0-package /root/.npm/proxmox/0.1.0/package
+58 verbose lock /root/.npm/proxmox/0.1.0/package /root/.npm/bfb9ea4e-root-npm-proxmox-0-1-0-package.lock
+59 silly lockFile 8fbb3a41-ot-npm-proxmox-0-1-0-package-tgz /root/.npm/proxmox/0.1.0/package.tgz
+60 verbose lock /root/.npm/proxmox/0.1.0/package.tgz /root/.npm/8fbb3a41-ot-npm-proxmox-0-1-0-package-tgz.lock
+61 silly gunzTarPerm modes [ '755', '644' ]
+62 silly gunzTarPerm extractEntry package.json
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm extractEntry lib/proxmox.js
+65 silly gunzTarPerm extractEntry license
+66 silly gunzTarPerm extractEntry test/test.js
+67 verbose read json /root/.npm/proxmox/0.1.0/package/package.json
+68 silly lockFile bfb9ea4e-root-npm-proxmox-0-1-0-package /root/.npm/proxmox/0.1.0/package
+69 silly lockFile bfb9ea4e-root-npm-proxmox-0-1-0-package /root/.npm/proxmox/0.1.0/package
+70 silly lockFile 8fbb3a41-ot-npm-proxmox-0-1-0-package-tgz /root/.npm/proxmox/0.1.0/package.tgz
+71 silly lockFile 8fbb3a41-ot-npm-proxmox-0-1-0-package-tgz /root/.npm/proxmox/0.1.0/package.tgz
+72 verbose from cache /root/.npm/proxmox/0.1.0/package/package.json
+73 verbose chmod /root/.npm/proxmox/0.1.0/package.tgz 644
+74 verbose chown /root/.npm/proxmox/0.1.0/package.tgz [ 0, 0 ]
+75 silly lockFile 3a52ce78- .
+76 silly publish { name: 'proxmox',
+76 silly publish   preferGobal: 'false',
+76 silly publish   version: '0.1.0',
+76 silly publish   author: { name: 'T. Tarvis' },
+76 silly publish   description: 'node.js, asynchronous, proxmox client',
+76 silly publish   repository: { type: 'git', url: 'https://github.com/ttarvis/node-proxmox' },
+76 silly publish   engines: { node: '>=0.10.9' },
+76 silly publish   licenses: [ { type: 'Artistic 2.0' } ],
+76 silly publish   main: './lib/proxmox.js',
+76 silly publish   readme: '# Node Proxmox\n\n## A node.js client for proxmox. See [Proxmox wiki](http://pve.proxmox.com/wiki/Main_Page)\n\n###### [Proxmox API wiki](http://pve.proxmox.com/wiki/Proxmox_VE_API)\n###### [Proxmox API referene](http://pve.proxmox.com/pve2-api-doc/)\n\n##### Note: Requires libcurl because node https module requires signed certificate\n\n##### Installation\n\n  ```npm install proxmox```\n\nor install from here.\n\n###### Example:\n\n    proxmox = require("proxmox")(\'user\', \'password\', \'domain.com\');\n  \n    proxmox.getClusterStatus(function(err, response){\n\tif(err) throw err;\n\telse{\n\t  data = JSON.parse(response);\n\t  console.log(data);\n\t}\n    });\n\nCallback is a function of the form ```function(err, response){}```\ndata is an object, not a string.\neverything else is a string\n\nAll returned responses are strings that can be parsed in to JSON as per the API reference.\n\n    getClusterStatus(callback);\n\n    getClusterBackupSchedule(callback);\n\n    getNodeNetworks(node, callback);\n\n    getNodeInterface(node, interface, callback);\n\n    getNodeContainerIndex(node, callback);\n\n    getNodeVirtualIndex(node, callback);\n\n    getNodeServiceState(node, service, callback);\n\n    getNodeStorage(node, callback);\n\n    getNodeFinishedTasks(node, callback);\n\n    getNodeDNS(node, callback);\n\n    getNodeSyslog(node, callback);\n\n    getNodeRRD(node, callback);\n\n    getNodeRRDData(node, callback);\n\n    getNodeBeans(node, callback);\n\n    getNodeTaskByUPID(node, upid, callback);\n\n    getNodeTaskStatusByUPID(node, upid, callback);\n\n    getNodeTaskLogByUPID(node, upid, callback);\n\n    getNodeTaskStatusByUPID(node, upid, callback);\n\n    getNodeScanMethods(node, callback);\n\n    getRemoteiSCSI(node, callback);\n\n    getNodeLVMGroups(node, callback);\n\n    getRemoteNFS(node, callback);\n\n    getNodeUSB(node, callback);\n\n    getStorageVolumeData(node, storage, volume, callback);\n\n    getStorageConfig(storage, callback);\n\n    getNodeStorageContent(node, storage, callback);\n\n    getNodeStorageRRD(node, storage, callback);\n  \n    getNodeStorageRRDData(node, storage, callback);\n\n    deleteNodeNetworkConfig(node, callback);\n\n    deleteNodeInterface(node, interface, callback);\n\n    deletePool(poolid, callback);\n\n    setNodeDNSDomain(node, domain, callback);\n\n    setNodeSubscriptionKey(node, key, callback);\n\n    setNodeTimeZone(node, timezone, callback);\n\n    setPoolData(poolid, data, callback);\n\n    updateStorageConfiguration(storageid, data, callback);\n\n### OpenVZ\n\n    openvz.createOpenvzContainer(node, data, callback);\n\n    openvz.mountOpenvzPrivate(node, vmid, callback);\n\n    openvz.shutdownOpenvzContainer(node, vmid, callback);\n\n    openvz.startOpenvzContainer(node, vmid, callback);\n\n    openvz.stopOpenvzContainer(node, vmid, callback);\n\n    openvz.unmountOpenvzContainer(node, vmid, callback);\n\n    openvz.migrateOpenvzContainer(node, vmid, target, callback);\n\n    openvz.getContainerIndex(node, vmid, callback);\n\n    openvz.getContainerSTatus(node, vmid, callback);\n\n    openvz.getContainerBeans(node, vmid, callback);\n\n    openvz.getContainerConfig(node, vmid, callback);\n\n    openvz.getContainerInitLog(node, vmid, callback);\n\n    openvz.getContainerRRD(node, vmid, callback);\n\n    openvz.getContainerRRDData(node, vmid, callback);\n\n    openvz.deleteOpenvzContainer(node, vmid, callback);\n\n    openvz.setOpenvzContainerOptions(node, vmid, data, callback);\n  \n\n### To Do:\ncompleted tests, examples, documentation, add methods for pool, node, KVM\n\n',
+76 silly publish   readmeFilename: 'README.md',
+76 silly publish   bugs: { url: 'https://github.com/ttarvis/node-proxmox/issues' },
+76 silly publish   _id: 'proxmox@0.1.0',
+76 silly publish   dist: { shasum: '6f3ad21470eb6f84bf8851904ebbebf6c8a326e0' },
+76 silly publish   _from: '.' }
+77 error need auth auth and email required for publishing
+77 error need auth You need to authorize this machine using `npm adduser`
+78 error System Linux 2.6.32-11-pve
+79 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "."
+80 error cwd /home/node-proxmox
+81 error node -v v0.10.9
+82 error npm -v 1.2.24
+83 error code ENEEDAUTH
+84 verbose exit [ 1, true ]

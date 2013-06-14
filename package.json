@@ -6,7 +6,7 @@
   "description": "node.js, asynchronous, proxmox client",
   "repository": {
 	"type":"git",
-	"url":"https://github.com/ttarvis/node-proxmox",
+	"url":"https://github.com/ttarvis/node-proxmox"
    },
   "engines": {
 	"node": ">=0.10.9"
