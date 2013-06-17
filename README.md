@@ -5,7 +5,7 @@
 ###### [Proxmox API wiki](http://pve.proxmox.com/wiki/Proxmox_VE_API)
 ###### [Proxmox API referene](http://pve.proxmox.com/pve2-api-doc/)
 
-##### Note: Requires libcurl because node https module requires signed certificate
+##### Note: Requires cURL because node https module does not correctly transfer custom headers without a signed certificate even if you accept unauthorized
 
 ##### Installation
 
