@@ -1,11 +1,11 @@
-var pmModule = require("/home/node-proxmox/lib/proxmox")('user', 'password', 'domain.com');
+var pmModule = require("../lib/proxmox")('root@pam', 'j2x4y7S5', '10.32.5.24');
 var assert = require("assert");
 
 
-pmModule.getClusterStatus(function(err, response){
+pmModule.qemu.resume('proxmoxTestbak',101,function(err, response){
   if (err) throw err;
   else {
     data = JSON.parse(response);
-    assert(response.data, !null, 'response null');
+  console.log(data);
   }
 });
