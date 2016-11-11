@@ -1,8 +1,7 @@
 var pmModule = require("../lib/proxmox")('root@pam', 'j2x4y7S5', '10.32.5.24');
 var assert = require("assert");
 
-
-pmModule.qemu.resume('proxmoxTestbak',101,function(err, response){
+pmModule.qemu.stop('proxmoxTestbak',100,function(err, response){
   if (err) throw err;
   else {
     data = JSON.parse(response);
