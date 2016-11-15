@@ -137,7 +137,7 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
     openvz.setOpenvzContainerOptions(node, vmid, data, callback);
 
-### Qemu
+### Qemu --- more info on permissions and data http://vasilisc.com/proxmox-ve-api-nodes
 
     qemu.getStatusCurrent (node, qemu,, callback);
 
