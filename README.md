@@ -16,7 +16,7 @@ or install from here.
 ###### Example:
 
     proxmox = require("proxmox")('user', 'password', 'domain.com');
-  
+
     proxmox.getClusterStatus(function(err, response){
 	if(err) throw err;
 	else{
@@ -84,7 +84,7 @@ All returned responses are strings that can be parsed in to JSON as per the API 
     getNodeStorageContent(node, storage, callback);
 
     getNodeStorageRRD(node, storage, callback);
-  
+
     getNodeStorageRRDData(node, storage, callback);
 
     deleteNodeNetworkConfig(node, callback);
@@ -136,8 +136,60 @@ All returned responses are strings that can be parsed in to JSON as per the API 
     openvz.deleteOpenvzContainer(node, vmid, callback);
 
     openvz.setOpenvzContainerOptions(node, vmid, data, callback);
-  
+
+### Qemu
+
+    qemu.getStatusCurrent (node, qemu,, callback);
+
+    qemu.start(node, qemu, callback);
+
+    qemu.stop(node, qemu, callback);
+
+    qemu.reset(node, qemu, callback);
+
+    qemu.shutdown(node, qemu, callback);
+
+    qemu.suspend(node, qemu, callback);
+
+    qemu.rrd(node, qemu, callback);
+
+    qemu.rrdData (node, qemu, callback);
+
+    qemu.config(node, qemu, callback);
+
+    qemu.pending(node, qemu, callback);
+
+    qemu.unlink(node, qemu, data, callback);
+
+    qemu.vncproxy (node, qemu, callback);
+
+    qemu.vncwebsocket(node, qemu, data, callback);
+
+    qemu.sendkey(node, qemu, data, callback);
+
+    qemu.feature (node, qemu, data, callback);
+
+    qemu.clone (node, qemu, data, callback);
+
+    qemu.moveDisk (node, qemu, data, callback);
+
+    qemu.migrate (node, qemu, data, callback);
+
+    qemu.monitor (node, qemu, data, callback);
+
+    qemu.resize (node, qemu, data, callback);
+
+    qemu.template (node, qemu, callback);
+
+    ### snapshot  
+
+    qemu.shapshot.list(node, qemu, callback);
+
+    qemu.snapshot.snapshot(node, qemu, snapname, callback);
+
+    qemu.snapshot.config(node, qemu, snapname, callback);
+
+    qemu.snapshot.rollback(node,qemu, snapname, callback);
 
 ### To Do:
 completed tests, examples, documentation, add methods for pool, node, KVM
-
