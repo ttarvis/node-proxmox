@@ -155,7 +155,11 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
     qemu.rrdData (node, qemu, callback);
 
-    qemu.config(node, qemu, callback);
+    qemu.getConfig(node, qemu, callback);
+
+    qemu.putConfig(node, qemu, data, callback);
+
+    qemu.postConfig(node, qemu, data, callback);
 
     qemu.pending(node, qemu, callback);
 
@@ -187,7 +191,9 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
     qemu.snapshot.snapshot(node, qemu, snapname, callback);
 
-    qemu.snapshot.config(node, qemu, snapname, callback);
+    qemu.snapshot.getConfig(node, qemu, snapname, callback);
+
+    qemu.snapshot.putConfig(node, qemu, snapname, data, callback);
 
     qemu.snapshot.rollback(node,qemu, snapname, callback);
 
