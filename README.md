@@ -203,5 +203,45 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
     ### firewall
 
+    qemu.firewall.list(node, qemu, callback);
+
+    qemu.firewall.listRules(node, qemu, callback);
+
+    qemu.firewall.createRule(node, qemu, data, callback);
+
+    qemu.firewall.getRule (node, qemu, pos, callback);
+
+    qemu.firewall.listAlias(node, qemu, callback);
+
+    qemu.firewall.createAlias(node, qemu, data, callback);
+
+    qemu.firewall.getAlias(node, qemu, name, callback);
+
+    qemu.firewall.updateAlias(node, qemu, name, data, callback);
+
+    qemu.firewall.listIpset(node, qemu, callback);
+
+    qemu.firewall.createIpset(node, qemu, data, callback);
+
+    qemu.firewall.getIpsetContent(node, qemu, name, callback);
+
+    qemu.firewall.addIpToIpset(node, qemu, name, data, callback);
+
+    qemu.firewall.deleteIpset(node, qemu, name, callback);
+
+    qemu.firewall.getIpfromIpset(node, qemu, name, cidr, callback);
+
+    qemu.firewall.updateIpfromIpset(node, qemu, name, cidr, data, callback);
+
+    qemu.firewall.deleteIpfromIpset(node, qemu, name, cidr, callback);
+
+    qemu.firewall.getOptions(node, qemu, callback);
+
+    qemu.firewall.setOptions(node, qemu, data, callback);
+
+    qemu.firewall.getLog(node, qemu, callback);
+
+    qemu.firewall.getRefs(node, qemu, callback);
+
 ### To Do:
 completed tests, examples, documentation, add methods for pool, node, KVM
