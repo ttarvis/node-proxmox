@@ -1,4 +1,4 @@
-var pmModule = require("../lib/proxmox")('root@pam', 'j2x4y7S5', '10.32.5.24');
+var pmModule = require("../lib/proxmox")('user', 'pass', 'ip');
 var assert = require("assert");
 
 pmModule.qemu.getStatusCurrent('proxmoxTestbak',100,function(err, response){
