@@ -197,5 +197,9 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
     qemu.snapshot.rollback(node,qemu, snapname, callback);
 
+    qemu.snapshot.delete(node, qemu, snapname, callback);
+
+    qemu.snapshot.make(node, qemu, data, callback);
+
 ### To Do:
 completed tests, examples, documentation, add methods for pool, node, KVM
