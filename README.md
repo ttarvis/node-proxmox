@@ -16,7 +16,7 @@ or install from here.
 ###### Example:
 
     proxmox = require("proxmox")('user', 'password', 'domain.com');
-  
+
     proxmox.getClusterStatus(function(err, response){
 	if(err) throw err;
 	else{
@@ -84,7 +84,7 @@ All returned responses are strings that can be parsed in to JSON as per the API 
     getNodeStorageContent(node, storage, callback);
 
     getNodeStorageRRD(node, storage, callback);
-  
+
     getNodeStorageRRDData(node, storage, callback);
 
     deleteNodeNetworkConfig(node, callback);
@@ -136,8 +136,112 @@ All returned responses are strings that can be parsed in to JSON as per the API 
     openvz.deleteOpenvzContainer(node, vmid, callback);
 
     openvz.setOpenvzContainerOptions(node, vmid, data, callback);
-  
+
+### Qemu --- more info on permissions and data http://vasilisc.com/proxmox-ve-api-nodes
+
+    qemu.getStatusCurrent (node, qemu,, callback);
+
+    qemu.start(node, qemu, callback);
+
+    qemu.stop(node, qemu, callback);
+
+    qemu.reset(node, qemu, callback);
+
+    qemu.shutdown(node, qemu, callback);
+
+    qemu.suspend(node, qemu, callback);
+
+    qemu.rrd(node, qemu, callback);
+
+    qemu.rrdData (node, qemu, callback);
+
+    qemu.getConfig(node, qemu, callback);
+
+    qemu.putConfig(node, qemu, data, callback);
+
+    qemu.postConfig(node, qemu, data, callback);
+
+    qemu.pending(node, qemu, callback);
+
+    qemu.unlink(node, qemu, data, callback);
+
+    qemu.vncproxy (node, qemu, callback);
+
+    qemu.vncwebsocket(node, qemu, data, callback);
+
+    qemu.sendkey(node, qemu, data, callback);
+
+    qemu.feature (node, qemu, data, callback);
+
+    qemu.clone (node, qemu, data, callback);
+
+    qemu.moveDisk (node, qemu, data, callback);
+
+    qemu.migrate (node, qemu, data, callback);
+
+    qemu.monitor (node, qemu, data, callback);
+
+    qemu.resize (node, qemu, data, callback);
+
+    qemu.template (node, qemu, callback);
+
+    ### snapshot  
+
+    qemu.shapshot.list(node, qemu, callback);
+
+    qemu.snapshot.snapshot(node, qemu, snapname, callback);
+
+    qemu.snapshot.getConfig(node, qemu, snapname, callback);
+
+    qemu.snapshot.putConfig(node, qemu, snapname, data, callback);
+
+    qemu.snapshot.rollback(node,qemu, snapname, callback);
+
+    qemu.snapshot.delete(node, qemu, snapname, callback);
+
+    qemu.snapshot.make(node, qemu, data, callback);
+
+    ### firewall
+
+    qemu.firewall.list(node, qemu, callback);
+
+    qemu.firewall.listRules(node, qemu, callback);
+
+    qemu.firewall.createRule(node, qemu, data, callback);
+
+    qemu.firewall.getRule (node, qemu, pos, callback);
+
+    qemu.firewall.listAlias(node, qemu, callback);
+
+    qemu.firewall.createAlias(node, qemu, data, callback);
+
+    qemu.firewall.getAlias(node, qemu, name, callback);
+
+    qemu.firewall.updateAlias(node, qemu, name, data, callback);
+
+    qemu.firewall.listIpset(node, qemu, callback);
+
+    qemu.firewall.createIpset(node, qemu, data, callback);
+
+    qemu.firewall.getIpsetContent(node, qemu, name, callback);
+
+    qemu.firewall.addIpToIpset(node, qemu, name, data, callback);
+
+    qemu.firewall.deleteIpset(node, qemu, name, callback);
+
+    qemu.firewall.getIpfromIpset(node, qemu, name, cidr, callback);
+
+    qemu.firewall.updateIpfromIpset(node, qemu, name, cidr, data, callback);
+
+    qemu.firewall.deleteIpfromIpset(node, qemu, name, cidr, callback);
+
+    qemu.firewall.getOptions(node, qemu, callback);
+
+    qemu.firewall.setOptions(node, qemu, data, callback);
+
+    qemu.firewall.getLog(node, qemu, callback);
+
+    qemu.firewall.getRefs(node, qemu, callback);
 
 ### To Do:
 completed tests, examples, documentation, add methods for pool, node, KVM
-
