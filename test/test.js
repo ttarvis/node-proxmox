@@ -1,6 +1,6 @@
 var pmModule = require("../lib/proxmox")('user', 'pass', 'ip');
 var assert = require("assert");
-
+/*
 pmModule.qemu.getStatusCurrent('proxmoxTestbak',100,function(err, response){
   if (err) throw err;
   else {
@@ -8,3 +8,4 @@ pmModule.qemu.getStatusCurrent('proxmoxTestbak',100,function(err, response){
   console.log(data);
   }
 });
+*/
