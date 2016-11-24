@@ -277,7 +277,7 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
     access.updateGroup (group, data, callback);
 
-    access. deleteGroup (group, callback);
+    access.deleteGroup (group, callback);
 
     access.listRoles (callback);
 
