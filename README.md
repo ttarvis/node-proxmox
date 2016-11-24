@@ -311,27 +311,27 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
 ### pools
 
-  pools.list (callback);
+    pools.list (callback);
 
-  pools.create (data, callback);
+    pools.create (data, callback);
 
-  pools.get (pool, callback);
+    pools.get (pool, callback);
 
-  pools.update (pool, data, callback);
+    pools.update (pool, data, callback);
 
-  pools.delete (pool, callback);
+    pools.delete (pool, callback);
 
 ### storage
 
-  storage.list (callback);
+    storage.list (callback);
 
-  storage.create (data, callback);
+    storage.create (data, callback);
 
-  storage.get (storageId, callback);
+    storage.get (storageId, callback);
 
-  storage.update (storageId, data, callback);
+    storage.update (storageId, data, callback);
 
-  storage.delete (storageId, callback);
+    storage.delete (storageId, callback);
 
 ### To Do:
 completed tests, examples, documentation, add methods for pool, node, KVM
