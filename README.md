@@ -31,6 +31,14 @@ everything else is a string
 
 All returned responses are strings that can be parsed in to JSON as per the API reference.
 
+    getNodes(callback);
+
+    getQemu(node, callback);
+
+    createQemu(node, data,  callback)
+
+    getStorage(callback);
+
     getClusterStatus(callback);
 
     getClusterBackupSchedule(callback);
@@ -137,9 +145,11 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
     openvz.setOpenvzContainerOptions(node, vmid, data, callback);
 
-### Qemu --- more info on permissions and data http://vasilisc.com/proxmox-ve-api-nodes
+### Qemu --- more info on permissions and data view the documentation.html
 
-    qemu.getStatusCurrent (node, qemu,, callback);
+    qemu.getStatus (node, qemu, callback);
+
+    qemu.getStatusCurrent (node, qemu, callback);
 
     qemu.start(node, qemu, callback);
 
@@ -150,6 +160,8 @@ All returned responses are strings that can be parsed in to JSON as per the API 
     qemu.shutdown(node, qemu, callback);
 
     qemu.suspend(node, qemu, callback);
+
+    qemu.resume(node, qemu, callback);
 
     qemu.rrd(node, qemu, callback);
 
@@ -187,7 +199,7 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
 ### snapshot  
 
-    qemu.shapshot.list(node, qemu, callback);
+    qemu.snapshot.list(node, qemu, callback);
 
     qemu.snapshot.snapshot(node, qemu, snapname, callback);
 

@@ -14,7 +14,7 @@
       <b>vm functions</b>
       <span>hover over for info</span>
       <span title="returns a list of all Vm's on that node"><a href="#getQemu">getQemu()</a></span>
-      <span title="Creates a new VM"><a href="#makeQemu">makeQemu()</a></span>
+      <span title="Creates a new VM"><a href="#makeQemu">createQemu()</a></span>
       <span title="Gets details about requested VM"><a href="#qemu.get">qemu.get()</a></span>
       <span title="Deletes requested VM"><a href="#qemu.del">qemu.del()</a></span>
       <br> <br>
@@ -165,7 +165,7 @@
         <div class="col-md-3" style="border: 1px solid grey">
           <span>Proxmox = require('proxmox')('user','password','server');</span>
 
-         <span>Proxmox.makeQemu('testNode',{paramaters}, function (err, data) { </span>
+         <span>Proxmox.createQemu('testNode',{paramaters}, function (err, data) { </span>
          <span> if (err) { </span>
          <span> throw err; </span>
          <span>} else { </span>
