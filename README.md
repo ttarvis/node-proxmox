@@ -31,6 +31,14 @@ everything else is a string
 
 All returned responses are strings that can be parsed in to JSON as per the API reference.
 
+    getNodes(callback);
+
+    getQemu(node, callback);
+
+    createQemu(node, data,  callback)
+
+    getStorage(callback);
+
     getClusterStatus(callback);
 
     getClusterBackupSchedule(callback);
@@ -137,9 +145,11 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
     openvz.setOpenvzContainerOptions(node, vmid, data, callback);
 
-### Qemu --- more info on permissions and data http://vasilisc.com/proxmox-ve-api-nodes
+### Qemu --- more info on permissions and data view the documentation.html
 
-    qemu.getStatusCurrent (node, qemu,, callback);
+    qemu.getStatus (node, qemu, callback);
+
+    qemu.getStatusCurrent (node, qemu, callback);
 
     qemu.start(node, qemu, callback);
 
@@ -150,6 +160,8 @@ All returned responses are strings that can be parsed in to JSON as per the API 
     qemu.shutdown(node, qemu, callback);
 
     qemu.suspend(node, qemu, callback);
+
+    qemu.resume(node, qemu, callback);
 
     qemu.rrd(node, qemu, callback);
 
@@ -185,9 +197,9 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
     qemu.template (node, qemu, callback);
 
-    ### snapshot  
+### snapshot  
 
-    qemu.shapshot.list(node, qemu, callback);
+    qemu.snapshot.list(node, qemu, callback);
 
     qemu.snapshot.snapshot(node, qemu, snapname, callback);
 
@@ -201,7 +213,7 @@ All returned responses are strings that can be parsed in to JSON as per the API 
 
     qemu.snapshot.make(node, qemu, data, callback);
 
-    ### firewall
+### firewall
 
     qemu.firewall.list(node, qemu, callback);
 
@@ -242,6 +254,96 @@ All returned responses are strings that can be parsed in to JSON as per the API 
     qemu.firewall.getLog(node, qemu, callback);
 
     qemu.firewall.getRefs(node, qemu, callback);
+
+### network
+
+    network.list (node, callback);
+
+    network.create(node, data, callback);
+
+    network.get (node, iface, callback);
+
+    network.update (node, iface, data, callback);
+
+    network.delete (node, callback);
+
+    network.deleteIface (node, iface, callback);
+
+### access
+
+    access.listUsers (callback);
+
+    access.createUser (data, callback);
+
+    access.getUser(user, callback);
+
+    access.updateUser (user, data, callback);
+
+    access.deleteUser (user, callback);
+
+    access.listGroups (callback);
+
+    access.createGroup (data, callback);
+
+    access.getGroup (group, callback);
+
+    access.updateGroup (group, data, callback);
+
+    access.deleteGroup (group, callback);
+
+    access.listRoles (callback);
+
+    access.createRole (data, callback);
+
+    access.getRole (role, callback);
+
+    access.updateRole (role, data, callback);
+
+    access.deleteRole (role, callback);
+
+    access.listDomains (callback);
+
+    access.createDomain (data, callback);
+
+    access.getDomain (domain, callback);
+
+    access.updateDomain (domain, data, callback);
+
+    access.deleteDomain (domain, callback);
+
+    access.getAcl (callback);
+
+    access.updateAcl (data, callback);
+
+    access.getTicket (callback);
+
+    access.postTicket(data, callback);
+
+    access.password(data, callback);
+
+### pools
+
+    pools.list (callback);
+
+    pools.create (data, callback);
+
+    pools.get (pool, callback);
+
+    pools.update (pool, data, callback);
+
+    pools.delete (pool, callback);
+
+### storage
+
+    storage.list (callback);
+
+    storage.create (data, callback);
+
+    storage.get (storageId, callback);
+
+    storage.update (storageId, data, callback);
+
+    storage.delete (storageId, callback);
 
 ### To Do:
 completed tests, examples, documentation, add methods for pool, node, KVM
